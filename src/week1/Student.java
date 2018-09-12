@@ -46,6 +46,10 @@ public class Student {
      */
     Student() {
         // TODO:
+        this.name = "Student";
+        this.id = "000";
+        this.group = "INT22041";
+        this.email = "uet@vnu.edu.vn";
     }
 
     /**
@@ -56,6 +60,10 @@ public class Student {
      */
     Student(String n, String sid, String em) {
         // TODO:
+        this.group = "INT22041";
+        this.email = em;
+        this.id = sid;
+        this.name = n;
     }
 
     /**
@@ -64,10 +72,14 @@ public class Student {
      */
     Student(Student s) {
         // TODO:
+        this.name = s.name;
+        this.id = s.id;
+        this.email = s.email;
+        this.group = s.group;
     }
 
     String getInfo() {
         // TODO:
-        return "Name: " + this.name + "ID: " + this.id + "Group: " + this.group + "Email: " + this.email;
+        return "Name: " + this.name + " - " + "ID: " + this.id + " - " + "Group: " + this.group + " - " + "Email: " + this.email;
     }
 }
