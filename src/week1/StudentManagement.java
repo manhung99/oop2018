@@ -19,5 +19,12 @@ public class StudentManagement {
 
     public static void main(String[] args) {
         // TODO:
+        Student me = new Student();
+        me.setName("Nguyen Manh Hung. ");
+        me.setId("17020788. ");
+        me.setGroup("Nhom 3. ");
+        me.setEmail("17020788@vnu.edu.vn. ");
+        System.out.println(me.getName());
+        System.out.println(me.getInfo());
     }
 }
