@@ -80,6 +80,6 @@ public class Student {
 
     String getInfo() {
         // TODO:
-        return "Name: " + this.name + " - " + "ID: " + this.id + " - " + "Group: " + this.group + " - " + "Email: " + this.email;
+        return "Name: " + this.name + " | " + "ID: " + this.id + " | " + "Group: " + this.group + " | " + "Email: " + this.email;
     }
 }
