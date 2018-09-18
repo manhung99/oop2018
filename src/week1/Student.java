@@ -3,41 +3,38 @@ package week1;
 public class Student {
 
     // TODO: khai báo các thuộc tính cho Student
-    private String name,id,group,email;
+    private String name, id, group, email;
 
     // TODO: khai báo các phương thức getter, setter cho Student
     public String getName() {
         return name;
     }
-    public void setName(String n)
-    {
+
+    public void setName(String n) {
         this.name = n;
     }
 
-    public String getId()
-    {
+    public String getId() {
         return id;
     }
-    public void setId(String n)
-    {
+
+    public void setId(String n) {
         this.id = n;
     }
 
-    public String getGroup()
-    {
+    public String getGroup() {
         return group;
     }
-    public void setGroup(String n)
-    {
+
+    public void setGroup(String n) {
         this.group = n;
     }
 
-    public String getEmail()
-    {
+    public String getEmail() {
         return email;
     }
-    public void setEmail(String n)
-    {
+
+    public void setEmail(String n) {
         this.email = n;
     }
 
@@ -54,6 +51,7 @@ public class Student {
 
     /**
      * Constructor 2
+     *
      * @param n
      * @param sid
      * @param em
@@ -68,6 +66,7 @@ public class Student {
 
     /**
      * Constructor 3
+     *
      * @param s
      */
     Student(Student s) {
