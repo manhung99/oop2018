@@ -40,10 +40,10 @@ public class StudentManagement {
         }
         if (index != -1) {
             students[index] = null;
-            for (int i = index; i < numberofstudent; i++) {
+            for (int i = index; i < numberofstudent - 1 ; i++) {
                 students[i] = students[i + 1];
             }
-            students[numberofstudent] = null;
+            students[numberofstudent-1] = null;
             numberofstudent--;
         } else System.out.println("Invalid To Remove Student By This Id");
     }
@@ -69,8 +69,8 @@ public class StudentManagement {
         System.out.println(s3.getInfo());*/
 
         //10
-        /*System.out.println(sameGroup(me, s2));
-        System.out.println(sameGroup(s2,s3));*/
+        //System.out.println(sameGroup(me, s2));
+        //System.out.println(sameGroup(s2,s3));
 
         //12
         StudentManagement sm = new StudentManagement();
@@ -79,7 +79,8 @@ public class StudentManagement {
         sm.students[2] = s2;
         sm.students[3] = s3;
 
-        sm.removeStudent("000");
+        sm.studentsByGroup();
+        sm.removeStudent("17020998");
 
         sm.studentsByGroup();
     }
