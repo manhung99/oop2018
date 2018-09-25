@@ -62,8 +62,7 @@ public class Fraction {
         if (this.denominator == 0 || other.denominator == 0) {
             System.out.println("Error denominator = 0");
             return null;
-        }
-        else if(other.numerator==0){
+        } else if (other.numerator == 0) {
             System.out.println("Can not divided!!!");
             return null;
         }
@@ -73,38 +72,32 @@ public class Fraction {
     }
 
     //hàm so sánh 2 phân số
-    public boolean equals(Fraction other){
+    public boolean equals(Fraction other) {
         if (this.denominator == 0 || other.denominator == 0) {
             System.out.println("Error denominator = 0");
         }
-        Fraction temp=this.subtract(other);
-        if(temp.numerator==0) return true;
+        Fraction temp = this.subtract(other);
+        if (temp.numerator == 0) return true;
         return false;
     }
 
     //hàm hiển thị phân số
-    public void displayFraction(){
-        if(this.denominator==1){
+    public void displayFraction() {
+        if (this.denominator == 1) {
             System.out.println(this.numerator);
-        }
-        else if(this.denominator==-1){
+        } else if (this.denominator == -1) {
             System.out.println(-this.numerator);
-        }
-        else if(this.numerator==0){
+        } else if (this.numerator == 0) {
             System.out.println(0);
-        }
-        else if(this.numerator==this.denominator){
+        } else if (this.numerator == this.denominator) {
             System.out.println(1);
-        }
-        else if(this.numerator==-this.denominator){
+        } else if (this.numerator == -this.denominator) {
             System.out.println(-1);
-        }
-        else if(this.denominator<0){
+        } else if (this.denominator < 0) {
 
-            System.out.println(-this.numerator+"/"+(-this.denominator));
-        }
-        else {
-            System.out.println(this.numerator+"/"+this.denominator);
+            System.out.println(-this.numerator + "/" + (-this.denominator));
+        } else {
+            System.out.println(this.numerator + "/" + this.denominator);
         }
     }
 
