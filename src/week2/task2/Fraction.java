@@ -11,7 +11,7 @@ public class Fraction {
         // TODO: khởi tạo giá trị cho các thuộc tính numberator (tử số), denominator (mẫu số)
         if (denominator == 0) {
             System.out.println("Error denominator = 0");
-            return;
+            System.exit(0);
         }
         this.denominator = denominator;
         this.numerator = numerator;
@@ -28,7 +28,7 @@ public class Fraction {
         // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
         if (this.denominator == 0 || other.denominator == 0) {
             System.out.println("Error denominator = 0");
-            return null;
+            System.exit(0);
         }
         Fraction sum = new Fraction(this.numerator * other.denominator + this.denominator * other.numerator, this.denominator * other.denominator);
         sum.fractionaldivisors();
@@ -39,7 +39,7 @@ public class Fraction {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
         if (this.denominator == 0 || other.denominator == 0) {
             System.out.println("Error denominator = 0");
-            return null;
+            System.exit(0);
         }
         Fraction sub = new Fraction(this.numerator * other.denominator - this.denominator * other.numerator, this.denominator * other.denominator);
         sub.fractionaldivisors();
@@ -50,7 +50,7 @@ public class Fraction {
         // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
         if (this.denominator == 0 || other.denominator == 0) {
             System.out.println("Error denominator = 0");
-            return null;
+            System.exit(0);
         }
         Fraction mul = new Fraction(this.numerator * other.numerator, this.denominator * other.denominator);
         mul.fractionaldivisors();
@@ -61,10 +61,10 @@ public class Fraction {
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
         if (this.denominator == 0 || other.denominator == 0) {
             System.out.println("Error denominator = 0");
-            return null;
+            System.exit(0);
         } else if (other.numerator == 0) {
             System.out.println("Can not divided!!!");
-            return null;
+            System.exit(0);
         }
         Fraction div = new Fraction(this.numerator * other.denominator, this.denominator * other.numerator);
         div.fractionaldivisors();
@@ -102,10 +102,11 @@ public class Fraction {
 
     public static void main(String[] args) {
         Fraction t1 = new Fraction(1, 2);
-        Fraction t2 = new Fraction(3, 4);
+        Fraction t2 = new Fraction(0, 4);
         Fraction sum = t1.add(t2);
         Fraction sub = t1.subtract(t2);
         Fraction mul = t1.multiply(t2);
         Fraction div = t1.divide(t2);
+        div.displayFraction();
     }
 }
