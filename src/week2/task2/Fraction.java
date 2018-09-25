@@ -94,7 +94,6 @@ public class Fraction {
         } else if (this.numerator == -this.denominator) {
             System.out.println(-1);
         } else if (this.denominator < 0) {
-
             System.out.println(-this.numerator + "/" + (-this.denominator));
         } else {
             System.out.println(this.numerator + "/" + this.denominator);
