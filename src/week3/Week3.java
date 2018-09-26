@@ -43,9 +43,4 @@ public class Week3 {
         return "Béo phì";
     }
 
-    public static void main(String[] args) {
-        int[] ar = {1,2,-39,4,5};
-        System.out.println(minOfArray(ar));
-        System.out.println(calculateBMI(57,1.66));
-    }
 }
