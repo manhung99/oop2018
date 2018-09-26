@@ -8,7 +8,7 @@ public class Week3Test {
     // TODO: Viết 5 testcase cho phương thức max()
 
     /**
-     * hàm test Chương trình tìm giá trị lớn nhất của hai số nguyên
+     * hàm test chương trình tìm giá trị lớn nhất của hai số nguyên
      */
     @Test
     void testmax() {
@@ -21,7 +21,7 @@ public class Week3Test {
     // TODO: Viết 5 testcase cho phương thức minOfArray()
 
     /**
-     * hàm test Chương trình tìm giá trị nhỏ nhất của của một mảng số nguyên
+     * hàm test chương trình tìm giá trị nhỏ nhất của của một mảng số nguyên
      */
     @Test
     void testminOfArray() {
@@ -68,7 +68,7 @@ public class Week3Test {
     // TODO: Viết 5 testcase cho phương thức calculateBMI()
 
     /**
-     * hàm test Chương trình tính chỉ số BMI và in ra kết quả đánh giá
+     * hàm test chương trình tính chỉ số BMI và in ra kết quả đánh giá
      */
     @Test
     void testcalculateBMI() {
