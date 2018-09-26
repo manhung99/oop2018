@@ -72,11 +72,11 @@ public class Fraction {
     }
 
     //hàm so sánh 2 phân số
-    public boolean equals(Fraction other) {
-        if (this.denominator == 0 || other.denominator == 0) {
-            System.out.println("Error denominator = 0");
-        }
-        Fraction temp = this.subtract(other);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Fraction fraction = (Fraction) o;
+        Fraction temp = this.subtract(fraction);
         if (temp.numerator == 0) return true;
         return false;
     }
@@ -102,11 +102,12 @@ public class Fraction {
 
     public static void main(String[] args) {
         Fraction t1 = new Fraction(1, 2);
-        Fraction t2 = new Fraction(0, 4);
+        Fraction t2 = new Fraction(4, 4);
         Fraction sum = t1.add(t2);
         Fraction sub = t1.subtract(t2);
         Fraction mul = t1.multiply(t2);
-        Fraction div = t1.divide(t2);
-        div.displayFraction();
+
+
+        System.out.println(t1.equals(t2));
     }
 }
