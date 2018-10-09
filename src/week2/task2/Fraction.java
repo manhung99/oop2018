@@ -102,10 +102,14 @@ public class Fraction {
 
     public static void main(String[] args) {
         Fraction t1 = new Fraction(1, 2);
-        Fraction t2 = new Fraction(4, 4);
+        Fraction t2 = new Fraction(2, 4);
         Fraction sum = t1.add(t2);
         Fraction sub = t1.subtract(t2);
         Fraction mul = t1.multiply(t2);
+
+        sum.displayFraction();
+        sub.displayFraction();
+        mul.displayFraction();
 
 
         System.out.println(t1.equals(t2));

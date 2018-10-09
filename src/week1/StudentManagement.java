@@ -40,10 +40,10 @@ public class StudentManagement {
         }
         if (index != -1) {
             students[index] = null;
-            for (int i = index; i < numberofstudent - 1 ; i++) {
+            for (int i = index; i < numberofstudent - 1; i++) {
                 students[i] = students[i + 1];
             }
-            students[numberofstudent-1] = null;
+            students[numberofstudent - 1] = null;
             numberofstudent--;
         } else System.out.println("Invalid To Remove Student By This Id");
     }
