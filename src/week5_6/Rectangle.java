@@ -25,7 +25,7 @@ public class Rectangle extends Shape {
     }
 
     public Rectangle() {
-        this(1,1,new Point());
+        this(1, 1, new Point());
     }
 
     public double getWidth() {

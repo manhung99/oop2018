@@ -3,7 +3,7 @@ package week5_6;
 import java.util.Objects;
 
 public class Point {
-    private double x,y;
+    private double x, y;
 
     public Point(double x, double y) {
         this.x = x;
@@ -11,7 +11,7 @@ public class Point {
     }
 
     public Point() {
-        this(0,0);
+        this(0, 0);
     }
 
     public double getX() {

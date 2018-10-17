@@ -10,16 +10,16 @@ public class Layer {
     public Layer() {
         this.layer = new ArrayList<>();
         this.visible = true;
-}
+    }
 
     public Layer(ArrayList<Shape> layer) {
         this();
         this.layer = layer;
     }
 
-    public Layer(boolean visible){
+    public Layer(boolean visible) {
         this();
-        this.visible=false;
+        this.visible = false;
     }
 
     public Layer(ArrayList<Shape> layer, boolean visible) {
@@ -77,15 +77,15 @@ public class Layer {
         }
     }
 
-    public void revomeDuplicated(){
+    public void revomeDuplicated() {
         for (int i = 0; i < layer.size(); i++) {
-            int count=0;
+            int count = 0;
             for (int j = i + 1; j < layer.size(); j++) {
                 if (layer.get(i).equals(layer.get(j))) {
                     count++;
                 }
             }
-            if (count>0) layer.remove(i--);
+            if (count > 0) layer.remove(i--);
         }
     }
 

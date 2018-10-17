@@ -21,7 +21,7 @@ public class Diagram {
         this.diagram = diagram;
     }
 
-    public void removeCircle(){
+    public void removeCircle() {
         for (Layer layer : diagram) {
             layer.removeCircle();
         }
@@ -30,8 +30,8 @@ public class Diagram {
     public void printDiagram() {
 
         for (Layer layer : diagram) {
-            if(layer.isVisible())
-            layer.printLayer();
+            if (layer.isVisible())
+                layer.printLayer();
         }
     }
 
@@ -41,16 +41,16 @@ public class Diagram {
         Layer rectangles = new Layer();
         Layer squares = new Layer();
         Layer hexagons = new Layer();
-        
 
-        for(Layer layer : diagram) {
+
+        for (Layer layer : diagram) {
             for (Shape shape : layer.getLayer()) {
                 if (shape instanceof Circle) circles.getLayer().add(shape);
                 if (shape instanceof Triangle) triangles.getLayer().add(shape);
                 if (shape instanceof Rectangle) rectangles.getLayer().add(shape);
                 if (shape instanceof Square) squares.getLayer().add(shape);
                 if (shape instanceof Hexagon) hexagons.getLayer().add(shape);
-                
+
             }
         }
         diagram.clear();
