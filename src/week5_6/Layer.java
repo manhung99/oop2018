@@ -79,12 +79,13 @@ public class Layer {
 
     public void revomeDuplicated(){
         for (int i = 0; i < layer.size(); i++) {
+            int count=0;
             for (int j = i + 1; j < layer.size(); j++) {
                 if (layer.get(i).equals(layer.get(j))) {
-                    layer.remove(i);
-                    break;
+                    count++;
                 }
             }
+            if (count>0) layer.remove(i--);
         }
     }
 
