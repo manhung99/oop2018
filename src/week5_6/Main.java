@@ -15,30 +15,29 @@ public class Main {
         Layer layer = new Layer();
         Diagram diagram = new Diagram();
 
-        layer.getLayer().add(rectangle);
-        layer.getLayer().add(circle);
-        layer.getLayer().add(square);
-        layer.getLayer().add(hexagon1);
-        layer.getLayer().add(circle1);
         layer.getLayer().add(rectangle1);
         layer.getLayer().add(hexagon);
-        layer.getLayer().add(triangle);
-        layer.getLayer().add(square1);
         layer.getLayer().add(triangle1);
+        layer.getLayer().add(hexagon1);
+        layer.getLayer().add(circle1);
+        layer.getLayer().add(square1);
+        layer.getLayer().add(triangle);
+        layer.getLayer().add(circle);
+        layer.getLayer().add(rectangle);
+        layer.getLayer().add(square);
 
 
-        System.out.println(circle.getColor());
+        layer.printLayer();
         //layer.removeTriangle();
-        //layer.revomeDuplicated();
+        layer.revomeDuplicated();
         //layer.removeCircle();
         //layer.printLayer();
 
+        System.out.println(".............................");;
 
 
         diagram.getDiagram().add(layer);
         //diagram.removeCircle();
-
-
         diagram.sortLayer();
         diagram.printDiagram();
 

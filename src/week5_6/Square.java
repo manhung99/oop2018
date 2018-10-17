@@ -2,48 +2,37 @@ package week5_6;
 
 import java.util.Objects;
 
-public class Square extends Rectangle {
-    private Double side;
+public class Square extends Shape {
     private Point centerPoint;
+    private double side;
 
-
-    public Square(String color, boolean filled, Double side, Point centerPoint) {
+    public Square(String color, boolean filled, Point centerPoint, double side) {
         super(color, filled);
-        this.side = side;
         this.centerPoint = centerPoint;
+        this.side = side;
     }
 
-    public Square(Double side, Point centerPoint) {
-        this.side = side;
+    public Square(Point centerPoint, double side) {
         this.centerPoint = centerPoint;
+        this.side = side;
+    }
+
+    public Square(String color, boolean filled) {
+        super(color, filled);
+        this.side=1.0;
+        this.centerPoint = new Point();
     }
 
     public Square() {
-        this.side=1.0;
-        centerPoint= new Point();
-    }
-
-    public Point getCenterPoint() {
-        return centerPoint;
-    }
-
-    public void setCenterPoint(Point centerPoint) {
-        this.centerPoint = centerPoint;
-    }
-
-    public Double getSide() {
-        return side;
-    }
-
-    public void setSide(Double side) {
-        this.side = side;
+        this.side =1.0;
+        this.centerPoint = new Point();
     }
 
     @Override
     public String toString() {
         return "Square{" +
-                "side=" + side +
-                ", centerPoint=" + centerPoint +
+                "centerPoint=" + centerPoint +
+                ", side=" + side +
                 '}';
     }
 
@@ -51,9 +40,9 @@ public class Square extends Rectangle {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
         Square square = (Square) o;
-        return Objects.equals(side, square.side);
+        return Double.compare(square.side, side) == 0 &&
+                Objects.equals(centerPoint, square.centerPoint);
     }
 
 }
