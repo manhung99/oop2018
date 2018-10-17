@@ -33,7 +33,8 @@ public class Main {
         //layer.removeCircle();
         //layer.printLayer();
 
-        System.out.println(".............................");;
+        System.out.println(".............................");
+        ;
 
 
         diagram.getDiagram().add(layer);

@@ -3,7 +3,7 @@ package week5_6;
 import java.util.Objects;
 
 public class Triangle extends Shape {
-    private Point a,b,c;
+    private Point a, b, c;
 
     public Triangle(String color, boolean filled, Point a, Point b, Point c) {
         super(color, filled);
@@ -23,7 +23,7 @@ public class Triangle extends Shape {
     }
 
     public Triangle() {
-        this(new Point(),new Point(),new Point());
+        this(new Point(), new Point(), new Point());
     }
 
     public Point getA() {

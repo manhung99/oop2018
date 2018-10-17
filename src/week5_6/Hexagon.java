@@ -18,8 +18,8 @@ public class Hexagon extends Shape {
     }
 
     public Hexagon() {
-        this.side=1.0;
-        this.centerPoint= new Point();
+        this.side = 1.0;
+        this.centerPoint = new Point();
     }
 
     public Hexagon(String color, boolean filled) {

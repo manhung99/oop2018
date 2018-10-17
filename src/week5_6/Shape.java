@@ -10,7 +10,7 @@ public abstract class Shape {
     }
 
     public Shape() {
-        this("black",true);
+        this("black", true);
     }
 
     public String getColor() {

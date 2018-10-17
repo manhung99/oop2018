@@ -19,12 +19,12 @@ public class Square extends Shape {
 
     public Square(String color, boolean filled) {
         super(color, filled);
-        this.side=1.0;
+        this.side = 1.0;
         this.centerPoint = new Point();
     }
 
     public Square() {
-        this.side =1.0;
+        this.side = 1.0;
         this.centerPoint = new Point();
     }
 
