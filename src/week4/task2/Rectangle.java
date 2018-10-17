@@ -108,4 +108,10 @@ public class Rectangle extends Shape {
                 ", filled=" + filled +
                 '}';
     }
+
+    public static void main(String[] args) {
+        Rectangle t1 = new Rectangle();
+        Rectangle t2 = new Rectangle();
+        Rectangle t3 = new Rectangle();
+    }
 }

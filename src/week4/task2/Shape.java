@@ -74,4 +74,11 @@ public class Shape {
                 ", filled=" + filled +
                 '}';
     }
+
+    public static void main(String[] args) {
+        Shape t1 = new Shape();
+        Shape t2 = new Shape("blue", false);
+        System.out.println(t1.toString());
+        System.out.println(t2.toString());
+    }
 }

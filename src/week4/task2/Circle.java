@@ -86,4 +86,18 @@ public class Circle extends Shape {
                 ", filled=" + filled +
                 '}';
     }
+
+    public static void main(String[] args) {
+        Circle t1 = new Circle();
+        Circle t2 = new Circle(10);
+        Circle t3 = new Circle(10, "white", false);
+
+        System.out.println(t1.toString());
+        System.out.println(t2.toString());
+        System.out.println(t3.toString());
+
+        System.out.println(t1.getArea() + " " + t1.getPerimeter());
+
+
+    }
 }

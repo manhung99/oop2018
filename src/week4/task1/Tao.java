@@ -5,7 +5,7 @@ package week4.task1;
  *
  * @author manhung99
  */
-public class Tao {
+public class Tao extends HoaQua {
     protected String smell;//mùi vị
     protected String taste;//vị
 
