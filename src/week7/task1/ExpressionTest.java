@@ -21,8 +21,7 @@ public class ExpressionTest {
         Division division = new Division(ten, zero);
         try {
             System.out.println(division.evaluate());
-        }
-        catch (ArithmeticException e){
+        } catch (ArithmeticException e) {
             System.out.println("Can not divided by zero!");
         }
     }

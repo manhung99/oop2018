@@ -1,6 +1,6 @@
 package week7.task1;
 
-public class Numeral extends Expression{
+public class Numeral extends Expression {
     private int value;
 
     public Numeral(int value) {
@@ -8,7 +8,7 @@ public class Numeral extends Expression{
     }
 
     public Numeral() {
-        this.value=0;
+        this.value = 0;
     }
 
     @Override

@@ -1,6 +1,6 @@
 package week7.task1;
 
-public class Square extends Expression{
+public class Square extends Expression {
     Expression expression;
 
     public Square(Expression expression) {
@@ -9,6 +9,6 @@ public class Square extends Expression{
 
     @Override
     public int evaluate() {
-        return expression.evaluate()*expression.evaluate();
+        return expression.evaluate() * expression.evaluate();
     }
 }

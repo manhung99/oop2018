@@ -1,6 +1,6 @@
 package week7.task1;
 
-public class Subtraction extends BinaryExpression{
+public class Subtraction extends BinaryExpression {
     Expression left;
     Expression right;
 
@@ -10,8 +10,8 @@ public class Subtraction extends BinaryExpression{
     }
 
     @Override
-    public int evaluate(){
-        return left.evaluate()-right.evaluate();
+    public int evaluate() {
+        return left.evaluate() - right.evaluate();
     }
 
     @Override

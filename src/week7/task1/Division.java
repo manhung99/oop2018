@@ -1,6 +1,6 @@
 package week7.task1;
 
-public class Division extends BinaryExpression{
+public class Division extends BinaryExpression {
     Expression left;
     Expression right;
 
@@ -11,7 +11,7 @@ public class Division extends BinaryExpression{
 
     @Override
     public int evaluate() {
-        return left.evaluate()/right.evaluate();
+        return left.evaluate() / right.evaluate();
     }
 
     @Override
