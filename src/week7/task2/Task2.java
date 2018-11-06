@@ -33,11 +33,11 @@ public class Task2 {
     }
 
     public static void getFileNotFoundException() throws FileNotFoundException {
-        bufferedReader = new BufferedReader(new FileReader("abc.txt"));
+        bufferedReader = new BufferedReader(new FileReader("read.txt"));
     }
 
     public static void getIOException() throws IOException {
-        bufferedReader = new BufferedReader(new FileReader("abc.txt"));
+        bufferedReader = new BufferedReader(new FileReader("read.txt"));
     }
 
 
