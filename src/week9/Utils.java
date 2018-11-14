@@ -15,7 +15,7 @@ public class Utils {
         in.close();
         return xxx;
     }
-
+//
     public static void writeContentToFile(String path, String content) throws IOException {
         BufferedWriter out = new BufferedWriter(new FileWriter(path, false));//false là ghi lại từ đầu - true là bổ xung nội dung mới vào cuối tệp
         //out.write("\n"); //remove comment nếu để thuộc tính append là true
@@ -23,7 +23,7 @@ public class Utils {
         out.close();
     }
 
-    public static File findFileByName(String folderPath, String fileName) {
+public static File findFileByName(String folderPath, String fileName) {
         File dir = new File(folderPath);
         String[] children = dir.list();
         String file = null;
@@ -37,6 +37,8 @@ public class Utils {
             return findedFile;
         }
     }
+
+
 
     public static void main(String[] args) {
         try {
