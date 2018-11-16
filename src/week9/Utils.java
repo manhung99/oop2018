@@ -14,14 +14,14 @@ public class Utils {
         }
         in.close();
         return xxx;
-    }
+    }//end
 //
     public static void writeContentToFile(String path, String content) throws IOException {
         BufferedWriter out = new BufferedWriter(new FileWriter(path, false));//false là ghi lại từ đầu - true là bổ xung nội dung mới vào cuối tệp
         //out.write("\n"); //remove comment nếu để thuộc tính append là true
         out.write(content);
         out.close();
-    }
+    }//end
 
 public static File findFileByName(String folderPath, String fileName) {
         File dir = new File(folderPath);
@@ -36,7 +36,7 @@ public static File findFileByName(String folderPath, String fileName) {
             File findedFile = new File(file);
             return findedFile;
         }
-    }
+    }//end
 
 
 
@@ -60,5 +60,5 @@ public static File findFileByName(String folderPath, String fileName) {
         } catch (IOException e) {
             System.out.println("ERROR!!! Kiểm tra lại đường dẫn hoặc tên file");
         }
-    }
+    }//end
 }
